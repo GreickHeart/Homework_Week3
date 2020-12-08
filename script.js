@@ -1,5 +1,5 @@
-var specifications = 
-"The Password must be at least 8 characters long and can contain any mix of character types that you wish. The more variation, the stronger the password!";
+
+var specifications =  "The Password must be at least 8 characters long and can contain any mix of character types that you wish. The more variation, the stronger the password!";
 
 alert(specifications);
 
@@ -7,15 +7,8 @@ alert(specifications);
 
 
 
-function handleChange() {
-    var Length = document.getElementById("Length");  
-    document.getElementById("Value").innerHTML = complexity.value;
-  };
-  
 
-
-
-function LetThereBePasswords() {
+  function LetThereBePasswords() {
 
 
 
@@ -52,26 +45,5 @@ function LetThereBePasswords() {
     "!$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
     
-    let CharTypes = `${useUpperCase ? UpperCase : ''}${useLowerCase ? LowerCase : ''}${useSpecials ? Specials: ''}${useNumbers ? Numbers : ''}`;
-
-
-    var password= "";
-
-    for (var i = 0; i <= Length; i++) {
-        password = password + CharTypes.charAt(Math.random() * Math.floor(CharTypes.Length - 1));
-    }
-
-    document.getElementById('Success').value = password;
-}
-
-
-
-
-
-
-
-
-
-
-
+   
 
